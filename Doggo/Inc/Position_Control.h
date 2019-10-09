@@ -33,17 +33,17 @@ typedef struct
 	float y;
 	float L;
 }GaitParams_t;
-void SinTrajectory (float t, GaitParams_t *params, float gaitOffset);
-void CartesianToThetaGamma(GaitParams_t *params,float leg_direction);
-void gait(GaitParams_t *params,float leg0_offset, float leg1_offset,float leg2_offset, float leg3_offset);
-void CartesianToLegParams(float x, float y, float leg_direction, float *L, float* theta);
-void Theta_Gamma_To_moto_angle(GaitParams_t *params,uint8_t leg_num);
-void hop(GaitParams_t *params);
-void Send_To_Moto(float Ref_Angle_1,float Ref_Angle_2,float Ref_Angle_3,float Ref_Angle_4,float Ref_Angle_5,float Ref_Angle_6,float Ref_Angle_7,float Ref_Angle_8);
-void CommandAllLegs(float theta,float gamma);
-uint8_t IsValidGaitParams(GaitParams_t *params);
+extern void SinTrajectory (float t, GaitParams_t *params, float gaitOffset);
+extern void CartesianToThetaGamma(GaitParams_t *params,float leg_direction);
+extern void gait(GaitParams_t *params,float leg0_offset, float leg1_offset,float leg2_offset, float leg3_offset);
+extern void CartesianToLegParams(float x, float y, float leg_direction, float *L, float* theta);
+extern void Theta_Gamma_To_moto_angle(GaitParams_t *params,uint8_t leg_num);
+extern void hop(GaitParams_t *params);
+extern void Send_To_Moto(float Ref_Angle_1,float Ref_Angle_2,float Ref_Angle_3,float Ref_Angle_4,float Ref_Angle_5,float Ref_Angle_6,float Ref_Angle_7,float Ref_Angle_8);
+extern void CommandAllLegs(float theta,float gamma);
+extern uint8_t IsValidGaitParams(GaitParams_t *params);
 extern States_e state;extern States_e last_state;
 extern fp32 Angle_Gain[3];extern fp32 Speed_Gain[3];
 extern GaitParams_t gait_params;
-void state_trans(void);
+void State_Trans(void);
 #endif

@@ -12,6 +12,8 @@
 #include "detect_task.h"
 #include "user_lib.h"
 #include "HX711.h"
+#define L1 0.11f // upper leg length (m)
+#define L2 0.19f // lower leg length (m)
 float real_x,real_y;float weight;
 void MOTO_ANGLE_TO_X_Y(float theta1,float theta2);
 fp32 Angle_Gain[3]={10,0,100};fp32 Speed_Gain[3]={80,0,120};
@@ -69,15 +71,15 @@ void PositionControlThread(void *pvParameters)
 		{
 //		Ni_Ming(0xf1,Leg_Move.Moto_Angle_Pid[0].set,Leg_Move.Moto_Angle_Pid[0].fdb,\
 //		get_Leg_moto_Measure_Point(0)->given_current/1000,get_Leg_moto_Measure_Point(1)->given_current/1000);
-			serial_plot(4,Leg_Move.Moto_Angle_Pid[0].set,Leg_Move.Moto_Angle_Pid[0].fdb,\
-			Leg_Move.Moto_Angle_Pid[1].set,Leg_Move.Moto_Angle_Pid[1].fdb);
+//			serial_plot(4,Leg_Move.Moto_Angle_Pid[0].set,Leg_Move.Moto_Angle_Pid[0].fdb,\
+//			Leg_Move.Moto_Angle_Pid[1].set,Leg_Move.Moto_Angle_Pid[1].fdb);
 		}
 		if(last_state!=state)
 		{
 			gait_params = state_gait_params[state];//更新步态参数
 		}
 		last_state=state;
-    state_trans();//状态转换
+    State_Trans();//状态转换
 	  switch(state) 
 		{
 			case INIT:{
@@ -159,12 +161,12 @@ void gait(GaitParams_t *params,float leg0_offset, float leg1_offset,float leg2_o
     t = xTaskGetTickCount()/1000.0f;
     const float leg0_direction = -1.0;//方向
     CoupledMoveLeg(0,t, &paramsL, leg0_offset, leg0_direction);
-//    const float leg1_direction = -1.0;
-//    CoupledMoveLeg(1,t, &paramsL, leg1_offset, leg1_direction);
-//    const float leg2_direction = 1.0;
-//    CoupledMoveLeg(2,t, &paramsR, leg2_offset, leg2_direction);
-//    const float leg3_direction = 1.0;
-//    CoupledMoveLeg(3,t, &paramsR, leg3_offset, leg3_direction);
+    const float leg1_direction = -1.0;
+    CoupledMoveLeg(1,t, &paramsL, leg1_offset, leg1_direction);
+    const float leg2_direction = 1.0;
+    CoupledMoveLeg(2,t, &paramsR, leg2_offset, leg2_direction);
+    const float leg3_direction = 1.0;
+    CoupledMoveLeg(3,t, &paramsR, leg3_offset, leg3_direction);
 		
 		Send_To_Moto(-(90.0f-leg_0_theta_1),-(90.0f-leg_0_theta_2),-(90.0f-leg_1_theta_1),-(90.0f-leg_1_theta_2),\
 		-(90.0f-leg_2_theta_1),-(90.0f-leg_2_theta_2),-(90.0f-leg_3_theta_1),-(90.0f-leg_3_theta_2));
@@ -174,8 +176,6 @@ void gait(GaitParams_t *params,float leg0_offset, float leg1_offset,float leg2_o
 */
 void GetGamma(float *L,float *gamma) 
 {
-	float L1 = 0.11f; // upper leg length (m)
-	float L2 = 0.19f; // lower leg length (m)
 	float cos_param = (pow(L1,2.0f) + pow(*L,2.0f) - pow(L2,2.0f)) / (2.0f*L1*(*L));
 	if (cos_param < -1.0f) 
 		{
@@ -244,10 +244,10 @@ void SinTrajectory (float t, GaitParams_t *params, float gaitOffset)
 				params->y = downAMP*arm_sin_f32(PI*percentBack) + stanceHeight;
 		}
 }
-void CartesianToThetaGamma(GaitParams_t *params,float leg_direction) 
+void CartesianToThetaGamma(GaitParams_t *params,float leg_direction)//坐标转换theta;gamma
 {
-    CartesianToLegParams(params->x, params->y, leg_direction, &params->L, &params->theta);
-    GetGamma(&params->L,&params->gamma);
+    CartesianToLegParams(params->x, params->y, leg_direction, &params->L, &params->theta);//计算出L和theta
+    GetGamma(&params->L,&params->gamma);//计算出gamma
 }
 void MOTO_ANGLE_TO_X_Y(float theta1,float theta2)
 {
@@ -255,7 +255,7 @@ void MOTO_ANGLE_TO_X_Y(float theta1,float theta2)
 //	float L=2*0.11*0.19*arm_cos_f32(gamma)-pow(0.11,2)-pow(0.19,2);
 //	real_x=L*arm_sin_f32(theta);real_y=L*arm_cos_f32(theta);
 }
-void Theta_Gamma_To_moto_angle(GaitParams_t *params,uint8_t leg_num)
+void Theta_Gamma_To_moto_angle(GaitParams_t *params,uint8_t leg_num)//转换为水平与上关节角度
 {
 	switch(leg_num)
 	{ 
@@ -340,7 +340,7 @@ void CommandAllLegs(float theta,float gamma)
 	
 	Leg_Control_Loop(All_MOTO_ANGLE);
 }	
-void state_trans(void)
+void State_Trans(void)
 {
 	if(state==JUMP)
 	{
