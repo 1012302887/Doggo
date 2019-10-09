@@ -1,0 +1,12 @@
+doggo\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c
+doggo\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+doggo\port.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+doggo\port.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+doggo\port.o: ../Inc/FreeRTOSConfig.h
+doggo\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+doggo\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+doggo\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+doggo\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+doggo\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+doggo\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+doggo\port.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h

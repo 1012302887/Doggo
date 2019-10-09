@@ -1,0 +1,14 @@
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/croutine.c
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+doggo\croutine.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+doggo\croutine.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+doggo\croutine.o: ../Inc/FreeRTOSConfig.h
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h
+doggo\croutine.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
