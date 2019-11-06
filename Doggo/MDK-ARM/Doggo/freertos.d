@@ -11,10 +11,6 @@ doggo\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrapper
 doggo\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/task.h
 doggo\freertos.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
 doggo\freertos.o: ../Inc/main.h
-doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
-doggo\freertos.o: ../Inc/stm32f4xx_hal_conf.h
-doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
-doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 doggo\freertos.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\freertos.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 doggo\freertos.o: ../Drivers/CMSIS/Include/core_cm4.h
@@ -24,6 +20,10 @@ doggo\freertos.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 doggo\freertos.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 doggo\freertos.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+doggo\freertos.o: ../Inc/stm32f4xx_hal_conf.h
+doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+doggo\freertos.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
@@ -32,6 +32,8 @@ doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
 doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h
 doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 doggo\freertos.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h

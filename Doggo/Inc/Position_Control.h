@@ -16,7 +16,8 @@ typedef enum States {
 	FLIP = 10,
 	TURN_TROT = 11,
 	RESTART = 12,
-	INIT=13
+	INIT=13,
+	neiba=14
 }States_e;
 typedef struct 
 {
@@ -35,7 +36,8 @@ typedef struct
 }GaitParams_t;
 extern void SinTrajectory (float t, GaitParams_t *params, float gaitOffset);
 extern void CartesianToThetaGamma(GaitParams_t *params,float leg_direction);
-extern void gait(GaitParams_t *params,float leg0_offset, float leg1_offset,float leg2_offset, float leg3_offset);
+extern void gait(GaitParams_t *params,float leg0_offset, float leg1_offset,float leg2_offset, float leg3_offset,\
+	int8_t leg0_direction, int8_t leg1_direction,int8_t leg2_direction, int8_t leg3_direction);
 extern void CartesianToLegParams(float x, float y, float leg_direction, float *L, float* theta);
 extern void Theta_Gamma_To_moto_angle(GaitParams_t *params,uint8_t leg_num);
 extern void hop(GaitParams_t *params);

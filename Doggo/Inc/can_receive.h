@@ -9,10 +9,10 @@ typedef enum
     CAN_3508_M2_ID = 0x202,
     CAN_3508_M3_ID = 0x203,
     CAN_3508_M4_ID = 0x204,
-		CAN_3508_M5_ID = 0x201,
-    CAN_3508_M6_ID = 0x202,
-    CAN_3508_M7_ID = 0x203,
-    CAN_3508_M8_ID = 0x204,
+		CAN_3508_M5_ID = 0x205,
+    CAN_3508_M6_ID = 0x206,
+    CAN_3508_M7_ID = 0x207,
+    CAN_3508_M8_ID = 0x208,
 
 } can_msg_id_e;
 //rm电机统一数据结构体

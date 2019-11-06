@@ -3,7 +3,7 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Tool Versions:</h2>
-IDE-Version: ¦ÌVision V5.28.0.0
+IDE-Version: ¦ÌVision V5.27.1.0
 Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
 License Information: 1 1, 1, LIC=CZL2Z-J1GT4-Y8BFK-Z9MTB-FN806-L7AQR
  
@@ -22,12 +22,21 @@ Dialog DLL:      TCM.DLL V1.36.2.0
  
 <h2>Project:</h2>
 E:\Doggo\Doggo\MDK-ARM\Doggo.uvprojx
-Project File Date:  09/29/2019
+Project File Date:  10/20/2019
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Doggo'
-"Doggo\Doggo.axf" - 0 Error(s), 0 Warning(s).
+compiling Position_Control.c...
+..\MDK-ARM\WT931.h(17): warning:  #1295-D: Deprecated declaration Imu_Data_Calc - give arg types
+  void Imu_Data_Calc();
+..\Src\Position_Control.c(86): warning:  #174-D: expression has no effect
+  				NULL;
+..\Src\Position_Control.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=39748 RO-data=2908 RW-data=1052 ZI-data=22820  
+FromELF: creating hex file...
+"Doggo\Doggo.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -50,7 +59,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.3.0
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>

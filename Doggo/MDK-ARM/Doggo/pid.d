@@ -1,10 +1,6 @@
 doggo\pid.o: ..\Src\pid.c
 doggo\pid.o: ../Inc/pid.h
 doggo\pid.o: ../Inc/main.h
-doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
-doggo\pid.o: ../Inc/stm32f4xx_hal_conf.h
-doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
-doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 doggo\pid.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\pid.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 doggo\pid.o: ../Drivers/CMSIS/Include/core_cm4.h
@@ -15,6 +11,10 @@ doggo\pid.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 doggo\pid.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 doggo\pid.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+doggo\pid.o: ../Inc/stm32f4xx_hal_conf.h
+doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+doggo\pid.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 doggo\pid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
@@ -24,6 +24,8 @@ doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
 doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h
 doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 doggo\pid.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h

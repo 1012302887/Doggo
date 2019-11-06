@@ -5,7 +5,7 @@ float Beta,Cos_Beta,Sin_Beta,Cos_Delta,Sin_Delta,A,D;
 void Trans_Jacobian(float Theta_1,float Theta_2,float current_1,float current_2)
 {
 	current_1=fabs(current_1);current_2=fabs(current_2);
-	Theta_2=fabs(Theta_2*PI/180.0f);Theta_1=fabs(Theta_1*PI/180.0f);
+	Theta_2=fabs(Theta_2);Theta_1=fabs(Theta_1);
 	Beta=Theta_2-Theta_1;
 	Cos_Beta=arm_cos_f32(Beta);Sin_Beta=arm_sin_f32(Beta);
 	A=1.0f/(2.0f*Sin_Beta);

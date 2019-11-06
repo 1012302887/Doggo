@@ -68,8 +68,13 @@ fp32 PID_Calc(PidTypeDef *pid, fp32 ref, fp32 set)
     pid->error[0] = set - ref;
     if (pid->mode == PID_POSITION)
     {
-        pid->Pout = pid->Kp * pid->error[0];
-        pid->Iout += pid->Ki * pid->error[0];
+        pid->Pout = pid->Kp * pid->error[0];				
+				if(fabs(pid->error[0])<0.3f){
+					pid->Iout=0;
+				}
+				else{
+					 pid->Iout += pid->Ki * pid->error[0];
+				}
         pid->Dbuf[2] = pid->Dbuf[1];
         pid->Dbuf[1] = pid->Dbuf[0];
         pid->Dbuf[0] = (pid->error[0] - pid->error[1]);

@@ -871,7 +871,7 @@ erwork --depend=doggo\startup_stm32f407xx.d -odoggo\startup_stm32f407xx.o -I..\
 \Inc -I.\RTE\_Doggo -IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.
 0\CMSIS\Core\Include -IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4x
 x_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include --predefine="__MICROLIB 
-SETA 1" --predefine="__UVISION_VERSION SETA 528" --predefine="_RTE_ SETA 1" --p
+SETA 1" --predefine="__UVISION_VERSION SETA 527" --predefine="_RTE_ SETA 1" --p
 redefine="STM32F407xx SETA 1" --list=startup_stm32f407xx.lst startup_stm32f407x
 x.s
 

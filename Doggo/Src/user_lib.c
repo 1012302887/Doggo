@@ -26,7 +26,9 @@ float ramp_calc(ramp_t *ramp)
 	{
 		return 0;
   }
-	
+	if(ramp->count<(0.5f*ramp->scale)){
+		ramp->count=0.5f*ramp->scale;
+	}
   if (ramp->count++ >= ramp->scale)
 	{
 		ramp->count = ramp->scale;
@@ -89,7 +91,18 @@ fp32 sign(fp32 value)
         return -1.0f;
     }
 }
-
+//ÅĞ¶Ï·ûºÅÎ»
+int16_t sign_int16(int16_t value)
+{
+    if (value >= 0.0f)
+    {
+        return 1;
+    }
+    else
+    {
+        return -1;
+    }
+}
 //¸¡µãËÀÇø
 fp32 fp32_deadline(fp32 Value, fp32 minValue, fp32 maxValue)
 {

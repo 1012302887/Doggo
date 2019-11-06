@@ -26,16 +26,21 @@
 #include "detect_task.h"
 #include "NI_MING.h"
 #include "HX711.h"
+#include "ADC_1.h"
+#include "CAN_Receive.h"
 UART_HandleTypeDef huart1;
 DMA_HandleTypeDef hdma_usart1_rx;
 TIM_HandleTypeDef htim7;
+TIM_HandleTypeDef htim9;
 osThreadId_t defaultTaskHandle;
-
+extern ADC_HandleTypeDef hadc1;
+extern void MX_USART3_UART_Init(void);
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_TIM7_Init(void);
+static void MX_TIM9_Init(void);
 void StartDefaultTask(void *argument);
 void start_task(void);
 
@@ -52,8 +57,11 @@ int main(void)
   MX_CAN1_Init();
   MX_CAN2_Init();
   MX_USART1_UART_Init();
-	MX_TIM7_Init();
-	Init_HX711pin();
+//	MX_USART3_UART_Init();
+//	MX_ADC1_Init();
+//	MX_TIM7_Init();
+//	Init_HX711pin();
+	MX_TIM9_Init();
   remote_control_init();
 	DetectInit(0,1000);//½ÓÊÕ»ú¶ÏÏßÅÐ¶Ï
   start_task();
@@ -61,6 +69,7 @@ int main(void)
   osKernelStart();
   while (1)
   {
+		
   }
 }
 
@@ -143,6 +152,9 @@ static void MX_DMA_Init(void)
     
   HAL_NVIC_SetPriority(DMA1_Stream5_IRQn, 5, 0);
   HAL_NVIC_EnableIRQ(DMA1_Stream5_IRQn);
+	
+	HAL_NVIC_SetPriority(DMA2_Stream0_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA2_Stream0_IRQn);
 }
 
 /**
@@ -202,6 +214,51 @@ void delay_us(uint16_t us)
 	HAL_TIM_Base_Stop(&htim7);
  
 }
+/**
+  * @brief TIM9 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM9_Init(void)
+{
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
+
+  htim9.Instance = TIM9;
+  htim9.Init.Prescaler = 83;
+  htim9.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim9.Init.Period = 1000;
+  htim9.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  if (HAL_TIM_Base_Init(&htim9) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim9, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_Init(&htim9) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_PWM_ConfigChannel(&htim9, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_ConfigChannel(&htim9, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+	HAL_TIM_MspPostInit(&htim9);
+	HAL_TIM_PWM_Start(&htim9,TIM_CHANNEL_1);  //ÂÌµÆ
+	HAL_TIM_PWM_Start(&htim9,TIM_CHANNEL_2);  //ºìµÆ
+}
+
 /**
   * @brief  Period elapsed callback in non blocking mode
   * @note   This function is called  when TIM1 interrupt took place, inside

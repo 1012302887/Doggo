@@ -47,6 +47,7 @@ extern void first_order_filter_cali(first_order_filter_type_t *first_order_filte
 extern void abs_limit(fp32 *num, fp32 Limit);
 //判断符号位
 extern fp32 sign(fp32 value);
+extern int16_t sign_int16(int16_t value);
 //浮点死区
 extern fp32 fp32_deadline(fp32 Value, fp32 minValue, fp32 maxValue);
 //int26死区

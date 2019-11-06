@@ -1,10 +1,6 @@
 doggo\remote_control.o: ..\Src\remote_control.c
 doggo\remote_control.o: ../Inc/remote_control.h
 doggo\remote_control.o: ../Inc/main.h
-doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
-doggo\remote_control.o: ../Inc/stm32f4xx_hal_conf.h
-doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
-doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 doggo\remote_control.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\remote_control.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 doggo\remote_control.o: ../Drivers/CMSIS/Include/core_cm4.h
@@ -15,6 +11,10 @@ doggo\remote_control.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 doggo\remote_control.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 doggo\remote_control.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+doggo\remote_control.o: ../Inc/stm32f4xx_hal_conf.h
+doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+doggo\remote_control.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 doggo\remote_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
@@ -24,6 +24,8 @@ doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_e
 doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h
 doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 doggo\remote_control.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h

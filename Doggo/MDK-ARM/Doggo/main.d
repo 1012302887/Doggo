@@ -1,9 +1,5 @@
 doggo\main.o: ../Src/main.c
 doggo\main.o: ../Inc/main.h
-doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
-doggo\main.o: ../Inc/stm32f4xx_hal_conf.h
-doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
-doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 doggo\main.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\main.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 doggo\main.o: ../Drivers/CMSIS/Include/core_cm4.h
@@ -14,6 +10,10 @@ doggo\main.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 doggo\main.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 doggo\main.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+doggo\main.o: ../Inc/stm32f4xx_hal_conf.h
+doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+doggo\main.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 doggo\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
@@ -23,6 +23,8 @@ doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
 doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h
 doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 doggo\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
@@ -48,3 +50,5 @@ doggo\main.o: ../Inc/remote_control.h
 doggo\main.o: ../Inc/detect_task.h
 doggo\main.o: ../Inc/NI_MING.h
 doggo\main.o: ../Inc/HX711.h
+doggo\main.o: ../Inc/ADC_1.h
+doggo\main.o: ../Inc/CAN_Receive.h

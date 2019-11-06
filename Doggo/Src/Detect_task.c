@@ -47,10 +47,6 @@ quu..__
 #include "arm_math.h"
 
 #define errorListLength 6
-/* 0:串口6断线判断  */
-/* 1:陀螺仪断线判断  */
-/* 2:接收机断线判断  */
-/* 3:YAW轴断线判断  */
 static error_t errorList[errorListLength+1];
 //掉线判断任务
 void DetectTask(void *pvParameters)

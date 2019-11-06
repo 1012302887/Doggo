@@ -7,7 +7,6 @@ uint8_t rc_RxBuffer[RECEIVELEN];
 //遥控器控制变量
 static RC_Ctrl_t RC_CtrlData = {0};
 static uint16_t	temp;
-uint32_t Reset;//判断遥控是否掉线
 //初始化DMA，串口2
 void remote_control_init(void)
 {
@@ -45,7 +44,6 @@ void USART2_IRQHandler(void)
 }
 void Get_Remote_info(RC_Ctrl_t *rc_ctrl ,volatile const uint8_t *sbus_buf)
 {
-    Reset ++;
     rc_ctrl->rc.ch[0] = (sbus_buf[0] | (sbus_buf[1] << 8)) & 0x07ff;        //!< Channel 0
     rc_ctrl->rc.ch[1] = ((sbus_buf[1] >> 3) | (sbus_buf[2] << 5)) & 0x07ff; //!< Channel 1
     rc_ctrl->rc.ch[2] = ((sbus_buf[2] >> 6) | (sbus_buf[3] << 2) |          //!< Channel 2

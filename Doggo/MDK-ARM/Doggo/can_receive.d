@@ -1,10 +1,6 @@
 doggo\can_receive.o: ..\Src\can_receive.c
 doggo\can_receive.o: ../Inc/CAN_Receive.h
 doggo\can_receive.o: ../Inc/main.h
-doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
-doggo\can_receive.o: ../Inc/stm32f4xx_hal_conf.h
-doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
-doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 doggo\can_receive.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\can_receive.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 doggo\can_receive.o: ../Drivers/CMSIS/Include/core_cm4.h
@@ -15,6 +11,10 @@ doggo\can_receive.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 doggo\can_receive.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 doggo\can_receive.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+doggo\can_receive.o: ../Inc/stm32f4xx_hal_conf.h
+doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+doggo\can_receive.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 doggo\can_receive.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
@@ -24,6 +24,8 @@ doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
 doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h
 doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 doggo\can_receive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
@@ -50,3 +52,7 @@ doggo\can_receive.o: ../Inc/can.h
 doggo\can_receive.o: ../Inc/detect_task.h
 doggo\can_receive.o: ../Inc/remote_control.h
 doggo\can_receive.o: ../Inc/position_control.h
+doggo\can_receive.o: ..\Drivers\CMSIS\DSP\Include\arm_math.h
+doggo\can_receive.o: ../Drivers/CMSIS/Include/core_cm4.h
+doggo\can_receive.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+doggo\can_receive.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

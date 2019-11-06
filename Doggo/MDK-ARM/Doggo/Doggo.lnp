@@ -1,6 +1,5 @@
 --cpu=Cortex-M4.fp
 "doggo\startup_stm32f407xx.o"
-"doggo\pid.o"
 "doggo\main.o"
 "doggo\freertos.o"
 "doggo\stm32f4xx_it.o"
@@ -23,6 +22,8 @@
 "doggo\stm32f4xx_hal_cortex.o"
 "doggo\stm32f4xx_hal.o"
 "doggo\stm32f4xx_hal_exti.o"
+"doggo\stm32f4xx_hal_adc.o"
+"doggo\stm32f4xx_hal_adc_ex.o"
 "doggo\system_stm32f4xx.o"
 "doggo\croutine.o"
 "doggo\event_groups.o"
@@ -34,6 +35,7 @@
 "doggo\cmsis_os2.o"
 "doggo\heap_4.o"
 "doggo\port.o"
+"doggo\pid.o"
 "doggo\can_receive.o"
 "doggo\user_lib.o"
 "doggo\detect_task.o"
@@ -47,6 +49,8 @@
 "doggo\can.o"
 "doggo\rc.o"
 "doggo\hx711.o"
+"doggo\adc1.o"
+"doggo\wt931.o"
 "..\DSP\arm_cortexM4lf_math.lib"
 --library_type=microlib --strict --scatter "Doggo\Doggo.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols

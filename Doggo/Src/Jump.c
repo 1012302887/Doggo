@@ -13,7 +13,7 @@ void StartJump(float start_time_s) {
     start_time_ = start_time_s;
     state = JUMP;
 		ramp_init(&Jump_Up_Ramp,1000);
-//		ramp_init(&Jump_Fall_Ramp,800);
+		ramp_init(&Jump_Fall_Ramp,1000);
 }
 
 /**
@@ -38,9 +38,9 @@ void ExecuteJump() {
     const float launch_time = 1.0f ; // Duration before retracting the leg [s]
     const float fall_time = 1.5f; //Duration after retracting leg to go back to normal behavior [s]
 
-    const float stance_height = 0.11f; // Desired leg extension before the jump [m]
-    const float jump_extension = 0.28f; // Maximum leg extension in [m]
-    const float fall_extension = 0.25f; // Desired leg extension during fall [m]
+    const float stance_height = 0.12f; // Desired leg extension before the jump [m]
+    const float jump_extension = 0.26f; // Maximum leg extension in [m]
+    const float fall_extension = 0.24f; // Desired leg extension during fall [m]
 
     float t = xTaskGetTickCount()/1000.0f - start_time_; // Seconds since jump was commanded
 
@@ -50,11 +50,10 @@ void ExecuteJump() {
         CartesianToThetaGamma(&gait_params,1.0);
 
         // Use gains with small stiffness and lots of damping
-//				static float a,b,c,d;
-				Angle_Gain[0]=6;Angle_Gain[2]=80;Speed_Gain[0]=70;Speed_Gain[2]=100;
+				Angle_Gain[0]=100;Angle_Gain[2]=100;Speed_Gain[0]=150;Speed_Gain[2]=100;
 				Leg_Moto_Data_Update(Angle_Gain,Speed_Gain);
 			
-				/*Ð±ÆÂÊä³ö£¬ÂýËÙÉÏÉý*/
+				/*Ð±ÆÂÊä³ö£¬¹·ÂýËÙÏÂ½µ*/
 				gait_params.theta=gait_params.theta*ramp_calc(&Jump_Up_Ramp);
 				gait_params.gamma=gait_params.gamma*ramp_calc(&Jump_Up_Ramp);
 			
@@ -65,8 +64,7 @@ void ExecuteJump() {
         CartesianToThetaGamma(&gait_params,1.0);
 
         // Use high stiffness and low damping to execute the jump
-//        static float a,b,c,d;
-				Angle_Gain[0]=10;Angle_Gain[2]=100;Speed_Gain[0]=80;Speed_Gain[2]=100;
+				Angle_Gain[0]=200;Angle_Gain[2]=100;Speed_Gain[0]=300;Speed_Gain[2]=100;
 				Leg_Moto_Data_Update(Angle_Gain,Speed_Gain);
 				CommandAllLegs(gait_params.theta,gait_params.gamma);
     } else if (t >= prep_time + launch_time && t < prep_time + launch_time + fall_time) {
@@ -75,12 +73,11 @@ void ExecuteJump() {
         CartesianToThetaGamma(&gait_params,1.0);
 
         // Use low stiffness and lots of damping to handle the fall
-//				static float a,b,c,d;
-				Angle_Gain[0]=6;Angle_Gain[2]=100;Speed_Gain[0]=80;Speed_Gain[2]=120;
+				Angle_Gain[0]=100;Angle_Gain[2]=100;Speed_Gain[0]=150;Speed_Gain[2]=100;
 				Leg_Moto_Data_Update(Angle_Gain,Speed_Gain);
 				/*Ð±ÆÂÊä³ö£¬ÂýËÙ»Ö¸´*/
-//				gait_params.theta=gait_params.theta*ramp_calc(&Jump_Fall_Ramp);
-//				gait_params.gamma=gait_params.gamma*ramp_calc(&Jump_Fall_Ramp);
+				gait_params.theta=gait_params.theta*ramp_calc(&Jump_Fall_Ramp);
+				gait_params.gamma=gait_params.gamma*ramp_calc(&Jump_Fall_Ramp);
         CommandAllLegs(gait_params.theta,gait_params.gamma);
     } else {
         state = STOP;

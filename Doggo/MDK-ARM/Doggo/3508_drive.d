@@ -2,10 +2,6 @@ doggo\3508_drive.o: ..\Src\3508_Drive.c
 doggo\3508_drive.o: ../Inc/3508_Drive.h
 doggo\3508_drive.o: ../Inc/pid.h
 doggo\3508_drive.o: ../Inc/main.h
-doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
-doggo\3508_drive.o: ../Inc/stm32f4xx_hal_conf.h
-doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
-doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
 doggo\3508_drive.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\3508_drive.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 doggo\3508_drive.o: ../Drivers/CMSIS/Include/core_cm4.h
@@ -16,6 +12,10 @@ doggo\3508_drive.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
 doggo\3508_drive.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 doggo\3508_drive.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+doggo\3508_drive.o: ../Inc/stm32f4xx_hal_conf.h
+doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+doggo\3508_drive.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 doggo\3508_drive.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
@@ -25,6 +25,8 @@ doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
 doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h
+doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h
 doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h
 doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 doggo\3508_drive.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
@@ -50,3 +52,4 @@ doggo\3508_drive.o: ../Drivers/CMSIS/Include/core_cm4.h
 doggo\3508_drive.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 doggo\3508_drive.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 doggo\3508_drive.o: ../Inc/NI_MING.h
+doggo\3508_drive.o: ../Inc/user_lib.h

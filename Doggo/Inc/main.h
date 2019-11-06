@@ -28,21 +28,12 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
+#include "stm32f4xx.h"
 #include "stm32f4xx_hal.h"
+#include "stm32f4xx_hal_tim.h"
 #include "stdio.h"
 #include "cmsis_os.h"
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
 
-/* USER CODE END Includes */
-
-/* Exported types ------------------------------------------------------------*/
-/* USER CODE BEGIN ET */
-
-/* USER CODE END ET */
-
-/* Exported constants --------------------------------------------------------*/
-/* USER CODE BEGIN EC */
 typedef unsigned char uint8_t;
 typedef unsigned short int uint16_t;
 typedef unsigned int uint32_t;
@@ -51,7 +42,7 @@ typedef unsigned char bool_t;
 typedef float fp32;
 typedef double fp64;
 /* USER CODE END EC */
-
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
 /* Exported macro ------------------------------------------------------------*/
 /* USER CODE BEGIN EM */
 
@@ -59,15 +50,6 @@ typedef double fp64;
 
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
-
-/* USER CODE BEGIN EFP */
-
-/* USER CODE END EFP */
-
-/* Private defines -----------------------------------------------------------*/
-/* USER CODE BEGIN Private defines */
-
-/* USER CODE END Private defines */
 
 #ifdef __cplusplus
 }
