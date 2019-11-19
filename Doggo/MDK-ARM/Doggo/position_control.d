@@ -48,6 +48,7 @@ doggo\position_control.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RV
 doggo\position_control.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
 doggo\position_control.o: ../Inc/Position_Control.h
 doggo\position_control.o: ..\Src\jump.h
+doggo\position_control.o: ../Inc/REST.h
 doggo\position_control.o: ..\Drivers\CMSIS\DSP\Include\arm_math.h
 doggo\position_control.o: ../Drivers/CMSIS/Include/core_cm4.h
 doggo\position_control.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
@@ -59,6 +60,8 @@ doggo\position_control.o: ../Inc/pid.h
 doggo\position_control.o: ../Inc/remote_control.h
 doggo\position_control.o: ../Inc/detect_task.h
 doggo\position_control.o: ../Inc/user_lib.h
-doggo\position_control.o: ../Inc/HX711.h
 doggo\position_control.o: ../Inc/ADC1.h
 doggo\position_control.o: ..\MDK-ARM\WT931.h
+doggo\position_control.o: ../Inc/Hop.h
+doggo\position_control.o: ../Inc/jacobian.h
+doggo\position_control.o: ../Inc/dwt_stm32_delay.h

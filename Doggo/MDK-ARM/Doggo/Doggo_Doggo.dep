@@ -1,6 +1,6 @@
 Dependencies for Project 'Doggo', Target 'Doggo': (DO NOT MODIFY !)
 F (startup_stm32f407xx.s)(0x5D7E8C22)(--cpu Cortex-M4.fp -g --apcs=interwork --pd "__MICROLIB SETA 1" -I ..\\Inc-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1"--list startup_stm32f407xx.lst --xref -o doggo\startup_stm32f407xx.o --depend doggo\startup_stm32f407xx.d)
-F (../Src/main.c)(0x5DBD3ACA)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\main.o --omf_browse doggo\main.crf --depend doggo\main.d)
+F (../Src/main.c)(0x5DD2B0E3)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\main.o --omf_browse doggo\main.crf --depend doggo\main.d)
 I (../Inc/main.h)(0x5DA98980)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5D80B39E)
@@ -39,7 +39,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
@@ -53,17 +53,18 @@ I (../Inc/NI_MING.h)(0x5D8C952E)
 I (../Inc/HX711.h)(0x5D9061A4)
 I (../Inc/ADC_1.h)(0x5DA98597)
 I (../Inc/CAN_Receive.h)(0x5DB1195A)
+I (../Inc/dwt_stm32_delay.h)(0x5DD16BDB)
 F (../Src/freertos.c)(0x5D7E8C1D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\freertos.o --omf_browse doggo\freertos.crf --depend doggo\freertos.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Inc/main.h)(0x5DA98980)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
@@ -139,14 +140,14 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
 I (../Inc/stm32f4xx_it.h)(0x5D7E8C1D)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 F (../Src/stm32f4xx_hal_msp.c)(0x5DABEE9F)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\stm32f4xx_hal_msp.o --omf_browse doggo\stm32f4xx_hal_msp.crf --depend doggo\stm32f4xx_hal_msp.d)
 I (../Inc/main.h)(0x5DA98980)
@@ -187,13 +188,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-F (../Src/stm32f4xx_hal_timebase_tim.c)(0x5D7E8C1E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\stm32f4xx_hal_timebase_tim.o --omf_browse doggo\stm32f4xx_hal_timebase_tim.crf --depend doggo\stm32f4xx_hal_timebase_tim.d)
+F (../Src/stm32f4xx_hal_timebase_tim.c)(0x5DD1710D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\stm32f4xx_hal_timebase_tim.o --omf_browse doggo\stm32f4xx_hal_timebase_tim.crf --depend doggo\stm32f4xx_hal_timebase_tim.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5D31F41F)
 I (../Inc/stm32f4xx_hal_conf.h)(0x5DA89188)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5D31F41F)
@@ -911,13 +912,13 @@ F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x5D31F39B)(--c99 -c -
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h)(0x5D31F39B)
 F (../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c)(0x5D31F39B)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\event_groups.o --omf_browse doggo\event_groups.crf --depend doggo\event_groups.d)
@@ -925,13 +926,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5D31F39B)
@@ -940,7 +941,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
@@ -953,13 +954,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5D31F39B)
 F (../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c)(0x5D31F39C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\stream_buffer.o --omf_browse doggo\stream_buffer.crf --depend doggo\stream_buffer.d)
@@ -967,13 +968,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h)(0x5D31F39B)
 F (../Middlewares/Third_Party/FreeRTOS/Source/tasks.c)(0x5D31F39C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\tasks.o --omf_browse doggo\tasks.crf --depend doggo\tasks.d)
@@ -982,13 +983,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h)(0x5D31F39B)
@@ -997,13 +998,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5D31F39B)
@@ -1015,13 +1016,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D31F398)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D31F398)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x5D31F39B)
@@ -1032,27 +1033,27 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c)(0x5D31F39C)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\port.o --omf_browse doggo\port.crf --depend doggo\port.d)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
-F (..\Src\pid.c)(0x5DBD4A93)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\pid.o --omf_browse doggo\pid.crf --depend doggo\pid.d)
+F (..\Src\pid.c)(0x5DC58D08)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\pid.o --omf_browse doggo\pid.crf --depend doggo\pid.d)
 I (../Inc/pid.h)(0x5D848E67)
 I (../Inc/main.h)(0x5DA98980)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
@@ -1092,13 +1093,16 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-F (..\Src\can_receive.c)(0x5DBC63F9)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\can_receive.o --omf_browse doggo\can_receive.crf --depend doggo\can_receive.d)
+I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x5D31F397)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB79D6)
+F (..\Src\can_receive.c)(0x5DD40825)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\can_receive.o --omf_browse doggo\can_receive.crf --depend doggo\can_receive.d)
 I (../Inc/CAN_Receive.h)(0x5DB1195A)
 I (../Inc/main.h)(0x5DA98980)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
@@ -1138,23 +1142,23 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
 I (../Inc/user_lib.h)(0x5DBC39B9)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Inc/can.h)(0x5D7E875A)
 I (../Inc/detect_task.h)(0x5D3E7668)
 I (../Inc/remote_control.h)(0x5D88EA6F)
-I (../Inc/position_control.h)(0x5DBD4608)
+I (../Inc/position_control.h)(0x5DCAC3DD)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x5D31F397)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB79D6)
-F (..\Src\user_lib.c)(0x5DBD417D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\user_lib.o --omf_browse doggo\user_lib.crf --depend doggo\user_lib.d)
+F (..\Src\user_lib.c)(0x5DC8144A)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\user_lib.o --omf_browse doggo\user_lib.crf --depend doggo\user_lib.d)
 I (../Inc/user_lib.h)(0x5DBC39B9)
 I (../Inc/main.h)(0x5DA98980)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
@@ -1194,7 +1198,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
@@ -1204,60 +1208,8 @@ I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x5D31F397)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB79D6)
 I (../Inc/can_receive.h)(0x5DB1195A)
-F (..\Src\Detect_task.c)(0x5DB2F39D)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\detect_task.o --omf_browse doggo\detect_task.crf --depend doggo\detect_task.d)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
-I (../Inc/Detect_Task.h)(0x5D3E7668)
-I (../Inc/main.h)(0x5DA98980)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5D80B39E)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x5D31F398)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5D31F398)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D31F398)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D31F398)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5D31F398)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5D31F395)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5D31F41F)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5DA89188)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5D31F41F)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
-I (../Inc/can_receive.h)(0x5DB1195A)
-I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x5D31F397)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
-I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB79D6)
-F (..\Src\3508_Drive.c)(0x5DC01DC2)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\3508_drive.o --omf_browse doggo\3508_drive.crf --depend doggo\3508_drive.d)
-I (../Inc/3508_Drive.h)(0x5DBD40CB)
+F (..\Src\3508_Drive.c)(0x5DD40361)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\3508_drive.o --omf_browse doggo\3508_drive.crf --depend doggo\3508_drive.d)
+I (../Inc/3508_Drive.h)(0x5DC591E5)
 I (../Inc/pid.h)(0x5D848E67)
 I (../Inc/main.h)(0x5DA98980)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
@@ -1297,7 +1249,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
@@ -1309,68 +1261,6 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB79D6)
 I (../Inc/NI_MING.h)(0x5D8C952E)
 I (../Inc/user_lib.h)(0x5DBC39B9)
-F (..\Src\Position_Control.c)(0x5DC048AC)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\position_control.o --omf_browse doggo\position_control.crf --depend doggo\position_control.d)
-I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB79D6)
-I (../Inc/can_receive.h)(0x5DB1195A)
-I (../Inc/main.h)(0x5DA98980)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5D80B39E)
-I (../Drivers/CMSIS/Include/core_cm4.h)(0x5D31F398)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
-I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5D31F398)
-I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D31F398)
-I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D31F398)
-I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5D31F398)
-I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5D31F395)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5D31F41F)
-I (../Inc/stm32f4xx_hal_conf.h)(0x5DA89188)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5D31F41F)
-I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5D31F41F)
-I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5D31F41F)
-I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Inc/Position_Control.h)(0x5DBD4608)
-I (..\Src\jump.h)(0x5D8748F9)
-I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x5D31F397)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
-I (../Inc/NI_MING.h)(0x5D8C952E)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
-I (../Inc/3508_drive.h)(0x5DBD40CB)
-I (../Inc/pid.h)(0x5D848E67)
-I (../Inc/remote_control.h)(0x5D88EA6F)
-I (../Inc/detect_task.h)(0x5D3E7668)
-I (../Inc/user_lib.h)(0x5DBC39B9)
-I (../Inc/HX711.h)(0x5D9061A4)
-I (../Inc/ADC1.h)(0x5DA9B455)
-I (..\MDK-ARM\WT931.h)(0x5DAD4496)
 F (..\Src\NI_MING.c)(0x5DAB393E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\ni_ming.o --omf_browse doggo\ni_ming.crf --depend doggo\ni_ming.d)
 I (../Inc/main.h)(0x5DA98980)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
@@ -1410,7 +1300,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
@@ -1422,13 +1312,13 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FB
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Inc/Start_Task.h)(0x5D7FC3B4)
 I (../Inc/main.h)(0x5DA98980)
@@ -1464,9 +1354,9 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5D31F41F)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5D31F41F)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5D31F41F)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
-I (../Inc/Position_Control.h)(0x5DBD4608)
+I (../Inc/Position_Control.h)(0x5DCAC3DD)
 I (../Inc/Detect_Task.h)(0x5D3E7668)
-F (..\Src\Jump.c)(0x5DBC500E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\jump.o --omf_browse doggo\jump.crf --depend doggo\jump.d)
+F (..\Src\Jump.c)(0x5DD16574)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\jump.o --omf_browse doggo\jump.crf --depend doggo\jump.d)
 I (..\Src\jump.h)(0x5D8748F9)
 I (../Inc/main.h)(0x5DA98980)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
@@ -1506,16 +1396,16 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
-I (../Inc/position_control.h)(0x5DBD4608)
-I (../Inc/3508_DRIVE.h)(0x5DBD40CB)
+I (../Inc/position_control.h)(0x5DCAC3DD)
+I (../Inc/3508_DRIVE.h)(0x5DC591E5)
 I (../Inc/pid.h)(0x5D848E67)
-I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
 I (../Inc/user_lib.h)(0x5DBC39B9)
 F (..\Src\remote_control.c)(0x5DA354BD)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\remote_control.o --omf_browse doggo\remote_control.crf --depend doggo\remote_control.d)
@@ -1558,7 +1448,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
@@ -1566,7 +1456,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
 I (../Inc/rc.h)(0x5D88EA6F)
 I (../Inc/Detect_Task.h)(0x5D3E7668)
-F (..\Src\Jacobian.c)(0x5D9E0CE3)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\jacobian.o --omf_browse doggo\jacobian.crf --depend doggo\jacobian.d)
+F (..\Src\Jacobian.c)(0x5DCADDA8)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\jacobian.o --omf_browse doggo\jacobian.crf --depend doggo\jacobian.d)
 I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x5D31F397)
 I (../Drivers/CMSIS/Include/core_cm4.h)(0x5D31F398)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
@@ -1582,6 +1472,146 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5D31F41F)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5D31F41F)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5D80B39E)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5D31F398)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5D31F395)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5D31F41F)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5D31F41F)
+F (..\Src\REST.c)(0x5DD16B4B)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\rest.o --omf_browse doggo\rest.crf --depend doggo\rest.d)
+I (../Inc/REST.h)(0x5DCAC380)
+I (../Inc/main.h)(0x5DA98980)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5D80B39E)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5D31F398)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5D31F398)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5D31F395)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5D31F41F)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5DA89188)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5D31F41F)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5D31F41F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
+I (../Inc/position_control.h)(0x5DCAC3DD)
+I (../Inc/3508_DRIVE.h)(0x5DC591E5)
+I (../Inc/pid.h)(0x5D848E67)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
+I (../Inc/user_lib.h)(0x5DBC39B9)
+F (..\Src\Hop.c)(0x5DD1300E)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\hop.o --omf_browse doggo\hop.crf --depend doggo\hop.d)
+I (../Inc/Hop.h)(0x5DCAC822)
+I (../Inc/main.h)(0x5DA98980)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5D80B39E)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5D31F398)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5D31F398)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5D31F395)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5D31F41F)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5DA89188)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5D31F41F)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5D31F41F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
+I (../Inc/position_control.h)(0x5DCAC3DD)
+I (../Inc/3508_DRIVE.h)(0x5DC591E5)
+I (../Inc/pid.h)(0x5D848E67)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
+I (../Inc/user_lib.h)(0x5DBC39B9)
+F (..\Inc\dwt_stm32_delay.h)(0x5DD16BDB)()
+F (..\Src\dwt_stm32_delay.c)(0x5DD16B4B)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\dwt_stm32_delay.o --omf_browse doggo\dwt_stm32_delay.crf --depend doggo\dwt_stm32_delay.d)
+I (../Inc/dwt_stm32_delay.h)(0x5DD16BDB)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5D31F41F)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5DA89188)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5D31F41F)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5D80B39E)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5D31F398)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D31F398)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5D31F398)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5D31F395)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5D31F41F)
@@ -1644,7 +1674,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
@@ -1690,7 +1720,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
@@ -1736,7 +1766,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
@@ -1781,7 +1811,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
@@ -1789,7 +1819,7 @@ I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
 I (../Inc/ADC1.h)(0x5DA9B455)
 F (..\Src\WT931.c)(0x5DADCEC6)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\wt931.o --omf_browse doggo\wt931.crf --depend doggo\wt931.d)
-I (..\MDK-ARM\WT931.h)(0x5DAD4496)
+I (..\MDK-ARM\WT931.h)(0x5DCAC835)
 I (../Inc/main.h)(0x5DA98980)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5D80B39E)
@@ -1828,10 +1858,127 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
-I (../Inc/FreeRTOSConfig.h)(0x5D7E8C1D)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
 I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
 I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
 F (..\DSP\arm_cortexM4lf_math.lib)(0x581CC65D)()
+F (..\Src\Detect_task.c)(0x5DD40744)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\detect_task.o --omf_browse doggo\detect_task.crf --depend doggo\detect_task.d)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
+I (../Inc/Detect_Task.h)(0x5D3E7668)
+I (../Inc/main.h)(0x5DA98980)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5D80B39E)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5D31F398)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5D31F395)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5D31F41F)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5DA89188)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5D31F41F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
+I (../Inc/can_receive.h)(0x5DB1195A)
+I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x5D31F397)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB79D6)
+F (..\Src\Position_Control.c)(0x5DD40642)(--c99 -c --cpu Cortex-M4.fp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ..\Drivers\CMSIS\DSP\Include -I ..\..\Doggo -I ..\MDK-ARM-I.\RTE\_Doggo-IC:\Users\潘志豪\AppData\Local\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include-IC:\Users\潘志豪\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F407xx -DUSE_HAL_DRIVER -DSTM32F407xx -DARM_MATH_CM4 -D__CC_ARM -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -D__TARGET_FPU_VFP -D__FPU_PRESENT-o doggo\position_control.o --omf_browse doggo\position_control.crf --depend doggo\position_control.d)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x5CEB79D6)
+I (../Inc/can_receive.h)(0x5DB1195A)
+I (../Inc/main.h)(0x5DA98980)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x5D31F395)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x5D80B39E)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x5D31F398)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5CEB79E2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5D31F398)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x5D31F398)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x5D31F395)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x5D31F41F)
+I (../Inc/stm32f4xx_hal_conf.h)(0x5DA89188)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5D31F41F)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5CEB79E2)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_can.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h)(0x5D31F41F)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h)(0x5D31F41F)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5CEB79E2)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h)(0x5D7FBDE4)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x5D31F39B)
+I (../Inc/FreeRTOSConfig.h)(0x5DD1710D)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x5D31F39B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x5D31F39C)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x5D31F39B)
+I (../Inc/Position_Control.h)(0x5DCAC3DD)
+I (..\Src\jump.h)(0x5D8748F9)
+I (../Inc/REST.h)(0x5DCAC380)
+I (..\Drivers\CMSIS\DSP\Include\arm_math.h)(0x5D31F397)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x5CEB79E2)
+I (../Inc/NI_MING.h)(0x5D8C952E)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x5DD17A80)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x5D31F39B)
+I (../Inc/3508_drive.h)(0x5DC591E5)
+I (../Inc/pid.h)(0x5D848E67)
+I (../Inc/remote_control.h)(0x5D88EA6F)
+I (../Inc/detect_task.h)(0x5D3E7668)
+I (../Inc/user_lib.h)(0x5DBC39B9)
+I (../Inc/ADC1.h)(0x5DA9B455)
+I (..\MDK-ARM\WT931.h)(0x5DCAC835)
+I (../Inc/Hop.h)(0x5DCAC822)
+I (../Inc/jacobian.h)(0x5DCADADB)
+I (../Inc/dwt_stm32_delay.h)(0x5DD16BDB)

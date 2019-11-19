@@ -603,19 +603,9 @@
               <FilePath>..\Src\user_lib.c</FilePath>
             </File>
             <File>
-              <FileName>Detect_task.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\Detect_task.c</FilePath>
-            </File>
-            <File>
               <FileName>3508_Drive.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\3508_Drive.c</FilePath>
-            </File>
-            <File>
-              <FileName>Position_Control.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Src\Position_Control.c</FilePath>
             </File>
             <File>
               <FileName>NI_MING.c</FileName>
@@ -641,6 +631,26 @@
               <FileName>Jacobian.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\Jacobian.c</FilePath>
+            </File>
+            <File>
+              <FileName>REST.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\REST.c</FilePath>
+            </File>
+            <File>
+              <FileName>Hop.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\Hop.c</FilePath>
+            </File>
+            <File>
+              <FileName>dwt_stm32_delay.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Inc\dwt_stm32_delay.h</FilePath>
+            </File>
+            <File>
+              <FileName>dwt_stm32_delay.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\dwt_stm32_delay.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -681,6 +691,21 @@
               <FileName>arm_cortexM4lf_math.lib</FileName>
               <FileType>4</FileType>
               <FilePath>..\DSP\arm_cortexM4lf_math.lib</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Task</GroupName>
+          <Files>
+            <File>
+              <FileName>Detect_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\Detect_task.c</FilePath>
+            </File>
+            <File>
+              <FileName>Position_Control.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Src\Position_Control.c</FilePath>
             </File>
           </Files>
         </Group>

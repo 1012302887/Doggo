@@ -45,3 +45,7 @@ doggo\pid.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
 doggo\pid.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
 doggo\pid.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h
 doggo\pid.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+doggo\pid.o: ..\Drivers\CMSIS\DSP\Include\arm_math.h
+doggo\pid.o: ../Drivers/CMSIS/Include/core_cm4.h
+doggo\pid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+doggo\pid.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

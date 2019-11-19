@@ -48,15 +48,17 @@ quu..__
 
 #define errorListLength 6
 static error_t errorList[errorListLength+1];
+static uint32_t time_add_;
+static void led_flicker(void);
 //掉线判断任务
 void DetectTask(void *pvParameters)
 {
-	static uint32_t time_add_;
 	//空闲一段时间
 	vTaskDelay(1800);
 	while (1)
 	{
 		time_add_++;
+		led_flicker();
 		for(uint8_t i=0;i<errorListLength;i++)
 		{
 			//防止在此任务运行时，正好注册时间，出现偶然性当前时间小于注册时间。出现负数，导致判断出错
@@ -80,7 +82,7 @@ void DetectTask(void *pvParameters)
 				errorList[i].lost_flag=0;
 			}
 		}
-		vTaskDelay(2);
+		vTaskDelay(100);
 	}
 }
 //设备接收数据钩子函数
@@ -94,8 +96,7 @@ void DetectInit(uint16_t i,uint32_t over_time)//over_time超时时间
 		errorList[i].overtime = over_time;
 }
 //判断是否掉线，返回1掉线
-uint8_t Detect_Judeg(uint8_t toe)
-{
+uint8_t Detect_Judeg(uint8_t toe){
 	if(errorList[toe].lost_flag==1)
 	{
 		return 1;
@@ -103,5 +104,18 @@ uint8_t Detect_Judeg(uint8_t toe)
 	else
 	{
 		return 0;
+	}
+}
+//流水灯，判断代码是否跑飞
+static void led_flicker(void){
+	if((time_add_%10 == 0)  && (time_add_%20 != 0))
+	{
+		TIM9->CCR1 = 1000;
+		TIM9->CCR2 = 0;
+	}
+	else if(time_add_%20 == 0)
+	{
+		TIM9->CCR1 = 0;
+		TIM9->CCR2 = 1000;
 	}
 }

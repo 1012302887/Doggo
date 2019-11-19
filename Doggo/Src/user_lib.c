@@ -26,8 +26,8 @@ float ramp_calc(ramp_t *ramp)
 	{
 		return 0;
   }
-	if(ramp->count<(0.5f*ramp->scale)){
-		ramp->count=0.5f*ramp->scale;
+	if(ramp->count<(0.6f*ramp->scale)){
+		ramp->count=0.6f*ramp->scale;
 	}
   if (ramp->count++ >= ramp->scale)
 	{

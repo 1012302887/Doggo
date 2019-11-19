@@ -101,12 +101,7 @@ void  HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 			case CAN_3508_M1_ID:
 			case CAN_3508_M2_ID:
 			case CAN_3508_M3_ID:
-			case CAN_3508_M4_ID:
-			case CAN_3508_M5_ID:
-			case CAN_3508_M6_ID:
-			case CAN_3508_M7_ID:
-			case CAN_3508_M8_ID:
-			{
+			case CAN_3508_M4_ID:{
  				i = Rx1Message.StdId - CAN_3508_M1_ID;
 				get_motor_measure(&Leg_motor[i], DATA);
 			}break;
@@ -160,6 +155,14 @@ void  HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 						last_yaw_angle = yaw_angle;
 //					printf("-%d-",HAL_GetTick());
 				}break;
+			case CAN_3508_M5_ID:
+			case CAN_3508_M6_ID:
+			case CAN_3508_M7_ID:
+			case CAN_3508_M8_ID:{
+			static uint8_t ii = 0;
+			ii = Rx2Message.StdId - CAN_3508_M1_ID;
+			get_motor_measure(&Leg_motor[ii], Data);
+			}break;
 			default:
 			{
 			}break;
@@ -181,13 +184,13 @@ void Send_3508_Id1_Id4(int16_t a, int16_t b, int16_t c, int16_t d)
 void Send_3508_Id5_Id8(int16_t a, int16_t b, int16_t c, int16_t d)
 {
   uint8_t i[8];
-  Tx1Message.RTR = CAN_RTR_DATA;
-  Tx1Message.IDE = CAN_ID_STD;
-  Tx1Message.StdId = 0x1ff;
-  Tx1Message.DLC = 0x08;
+  Tx2Message.RTR = CAN_RTR_DATA;
+  Tx2Message.IDE = CAN_ID_STD;
+  Tx2Message.StdId = 0x1ff;
+  Tx2Message.DLC = 0x08;
 	i[0]= a >> 8;i[1]= a;i[2]= b >> 8;i[3]= b;
 	i[4]= c >> 8;i[5]= c;i[6]= d >> 8;i[7]= d;
-	HAL_CAN_AddTxMessage(&hcan1,&Tx1Message,i,(uint32_t*)CAN_TX_MAILBOX0);
+	HAL_CAN_AddTxMessage(&hcan2,&Tx2Message,i,(uint32_t*)CAN_TX_MAILBOX0);
 }
 void Send_Gyro_jiaozhun(uint8_t mode ,uint16_t time)//
 {

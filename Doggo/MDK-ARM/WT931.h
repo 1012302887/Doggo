@@ -14,6 +14,6 @@ typedef struct Imu_Data_s{
 	float Temperature;
 }Imu_Data_s;
 void Imu_Data_Analysis(uint8_t num);
-void Imu_Data_Calc();
+void Imu_Data_Calc(void);
 extern Imu_Data_s Imu_Data;
 #endif

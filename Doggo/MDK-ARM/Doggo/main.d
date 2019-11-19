@@ -52,3 +52,4 @@ doggo\main.o: ../Inc/NI_MING.h
 doggo\main.o: ../Inc/HX711.h
 doggo\main.o: ../Inc/ADC_1.h
 doggo\main.o: ../Inc/CAN_Receive.h
+doggo\main.o: ../Inc/dwt_stm32_delay.h

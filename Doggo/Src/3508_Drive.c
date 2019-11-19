@@ -14,8 +14,8 @@ void Leg_Moto_Data_Init(void)
 	const static fp32 Moto_Speed_Pid[3] = {200, 0, 0};
 	for(int i=0;i<8;i++)
 	{
-		PID_Init(&Leg_Move.Moto_Angle_Pid[i],PID_POSITION,Moto_Angle_Pid,600,50);
-		PID_Init(&Leg_Move.Moto_Speed_Pid[i],PID_POSITION,Moto_Speed_Pid,15000,2000);
+		PID_Init(&Leg_Move.Moto_Angle_Pid[i],PID_POSITION,Moto_Angle_Pid,600,0);
+		PID_Init(&Leg_Move.Moto_Speed_Pid[i],PID_POSITION,Moto_Speed_Pid,16000,0);
 	}
 }
 void Leg_Moto_Data_Update(fp32 Angle_Gain[3],fp32 Speed_Gain[3]){
@@ -48,6 +48,7 @@ void Leg_Control_Loop(fp32 Target_Angle_f[8])
 //		  Send_3508_Id5_Id8(Leg_Move.Moto_Speed_Pid[4].out*ramp_calc(&state_change_ramp),Leg_Move.Moto_Speed_Pid[5].out*ramp_calc(&state_change_ramp),\
 //			0,0);
 	
-//		Send_3508_Id5_Id8(Leg_Move.Moto_Speed_Pid[4].out*ramp_calc(&state_change_ramp),Leg_Move.Moto_Speed_Pid[5].out*ramp_calc(&state_change_ramp),\
+//		Send_3508_Id5_Id8(0,0,\
 //		Leg_Move.Moto_Speed_Pid[6].out*ramp_calc(&state_change_ramp),Leg_Move.Moto_Speed_Pid[7].out*ramp_calc(&state_change_ramp));
 }
+

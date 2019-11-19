@@ -14,5 +14,5 @@ void Leg_Moto_Data_Update(fp32 Angle_Gain[3],fp32 Speed_Gain[3]);
 void Leg_Moto_Data_Init(void);
 void Leg_Control_Loop(fp32 Target_Angle_f[8]);
 extern Leg_Move_t Leg_Move;
-#define state_change_ramp_value 1000
+#define state_change_ramp_value 1500
 #endif

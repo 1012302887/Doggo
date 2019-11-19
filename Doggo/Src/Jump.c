@@ -3,7 +3,7 @@
 #include "3508_DRIVE.h"
 #include "task.h"
 #include "user_lib.h"
-float start_time_ = 0.0f;
+static float start_time_ = 0.0f;
 ramp_t Jump_Up_Ramp,Jump_Fall_Ramp;
 /**
  * Tell the position control thread to do the jump
@@ -12,8 +12,8 @@ ramp_t Jump_Up_Ramp,Jump_Fall_Ramp;
 void StartJump(float start_time_s) {
     start_time_ = start_time_s;
     state = JUMP;
-		ramp_init(&Jump_Up_Ramp,1000);
-		ramp_init(&Jump_Fall_Ramp,1000);
+		ramp_init(&Jump_Up_Ramp,2000);
+		ramp_init(&Jump_Fall_Ramp,2000);
 }
 
 /**
@@ -34,13 +34,13 @@ void StartJump(float start_time_s) {
 void ExecuteJump() {
     // min radius = 0.8
     // max radius = 0.25
-    const float prep_time = 2.0f; // Duration before jumping [s]
+    const float prep_time = 1.0f; // Duration before jumping [s]
     const float launch_time = 1.0f ; // Duration before retracting the leg [s]
-    const float fall_time = 1.5f; //Duration after retracting leg to go back to normal behavior [s]
+    const float fall_time = 1.0f; //Duration after retracting leg to go back to normal behavior [s]
 
     const float stance_height = 0.12f; // Desired leg extension before the jump [m]
     const float jump_extension = 0.26f; // Maximum leg extension in [m]
-    const float fall_extension = 0.24f; // Desired leg extension during fall [m]
+    const float fall_extension = 0.22f; // Desired leg extension during fall [m]
 
     float t = xTaskGetTickCount()/1000.0f - start_time_; // Seconds since jump was commanded
 

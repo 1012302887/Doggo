@@ -1,9 +1,9 @@
 #include "arm_math.h"
 #include "NI_MING.h"
-arm_matrix_instance_f32 jacobian,torque,jacobian_inv,jacobian_tran,jacobian_out;	float J[4],torque_[2],J_NEG[4],J_tran[4],jacobian_out_[2];
+arm_matrix_instance_f32 jacobian,torque,jacobian_inv,jacobian_tran,jacobian_out;
+float J[4],torque_[2],J_NEG[4],J_tran[4],jacobian_out_[2];
 float Beta,Cos_Beta,Sin_Beta,Cos_Delta,Sin_Delta,A,D;
-void Trans_Jacobian(float Theta_1,float Theta_2,float current_1,float current_2)
-{
+void Trans_Jacobian(float Theta_1,float Theta_2,float current_1,float current_2){
 	current_1=fabs(current_1);current_2=fabs(current_2);
 	Theta_2=fabs(Theta_2);Theta_1=fabs(Theta_1);
 	Beta=Theta_2-Theta_1;

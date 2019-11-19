@@ -2101,7 +2101,6 @@ void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPri
  * \ingroup TaskNotifications
  */
 uint32_t ulTaskNotifyTake( BaseType_t xClearCountOnExit, TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
-
 /**
  * task. h
  * <PRE>BaseType_t xTaskNotifyStateClear( TaskHandle_t xTask );</pre>

@@ -16,7 +16,7 @@
   */
 
 #include "pid.h"
-
+#include "arm_math.h"
 #define LimitMax(input, max)   \
     {                          \
         if (input > max)       \
@@ -68,20 +68,20 @@ fp32 PID_Calc(PidTypeDef *pid, fp32 ref, fp32 set)
     pid->error[0] = set - ref;
     if (pid->mode == PID_POSITION)
     {
-        pid->Pout = pid->Kp * pid->error[0];				
-				if(fabs(pid->error[0])<0.3f){
-					pid->Iout=0;
-				}
-				else{
+				pid->Pout = pid->Kp * pid->error[0];				
+//				if(fabs(pid->error[0])<0.01f){
+//					pid->Iout=0;
+//				}
+//				else{
 					 pid->Iout += pid->Ki * pid->error[0];
-				}
-        pid->Dbuf[2] = pid->Dbuf[1];
-        pid->Dbuf[1] = pid->Dbuf[0];
-        pid->Dbuf[0] = (pid->error[0] - pid->error[1]);
-        pid->Dout = pid->Kd * pid->Dbuf[0];
-        LimitMax(pid->Iout, pid->max_iout);
-        pid->out = pid->Pout + pid->Iout + pid->Dout;
-        LimitMax(pid->out, pid->max_out);
+//				}
+				pid->Dbuf[2] = pid->Dbuf[1];
+				pid->Dbuf[1] = pid->Dbuf[0];
+				pid->Dbuf[0] = (pid->error[0] - pid->error[1]);
+				pid->Dout = pid->Kd * pid->Dbuf[0];
+				LimitMax(pid->Iout, pid->max_iout);
+				pid->out = pid->Pout + pid->Iout + pid->Dout;
+				LimitMax(pid->out, pid->max_out);
     }
     else if (pid->mode == PID_DELTA)
     {

@@ -28,6 +28,8 @@
 #include "HX711.h"
 #include "ADC_1.h"
 #include "CAN_Receive.h"
+#include "dwt_stm32_delay.h"
+
 UART_HandleTypeDef huart1;
 DMA_HandleTypeDef hdma_usart1_rx;
 TIM_HandleTypeDef htim7;
@@ -64,6 +66,7 @@ int main(void)
 	MX_TIM9_Init();
   remote_control_init();
 	DetectInit(0,1000);//接收机断线判断
+//	DWT_Delay_Init();
   start_task();
   osKernelInitialize();
   osKernelStart();
