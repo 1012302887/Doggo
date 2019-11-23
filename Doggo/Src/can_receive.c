@@ -181,8 +181,7 @@ void Send_3508_Id1_Id4(int16_t a, int16_t b, int16_t c, int16_t d)
 	i[4]= c >> 8;i[5]= c;i[6]= d >> 8;i[7]= d;
 	HAL_CAN_AddTxMessage(&hcan1,&Tx1Message,i,(uint32_t*)CAN_TX_MAILBOX0);
 }
-void Send_3508_Id5_Id8(int16_t a, int16_t b, int16_t c, int16_t d)
-{
+void Send_3508_Id5_Id8(int16_t a, int16_t b, int16_t c, int16_t d){
   uint8_t i[8];
   Tx2Message.RTR = CAN_RTR_DATA;
   Tx2Message.IDE = CAN_ID_STD;

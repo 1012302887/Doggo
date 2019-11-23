@@ -15,7 +15,7 @@ void Leg_Moto_Data_Init(void)
 	for(int i=0;i<8;i++)
 	{
 		PID_Init(&Leg_Move.Moto_Angle_Pid[i],PID_POSITION,Moto_Angle_Pid,600,0);
-		PID_Init(&Leg_Move.Moto_Speed_Pid[i],PID_POSITION,Moto_Speed_Pid,16000,0);
+		PID_Init(&Leg_Move.Moto_Speed_Pid[i],PID_POSITION,Moto_Speed_Pid,15000,0);
 	}
 }
 void Leg_Moto_Data_Update(fp32 Angle_Gain[3],fp32 Speed_Gain[3]){

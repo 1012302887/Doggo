@@ -46,7 +46,7 @@ quu..__
 #include "can_receive.h"
 #include "arm_math.h"
 
-#define errorListLength 6
+#define errorListLength 3
 static error_t errorList[errorListLength+1];
 static uint32_t time_add_;
 static void led_flicker(void);

@@ -31,7 +31,7 @@ GaitParams_t state_gait_params[] =
 {
    //{s.h, d.a., u.a., f.p., s.l., fr., s.d.}
     {0.22, 0.0,   0.0, 0.35, 0.0, 1.0, 0.0}, // STOP
-    {0.24, 0.026f, 0.08, 0.35, 0.12, 1.8f, 0.0}, // TROT
+    {0.24, 0.026f, 0.08, 0.35, 0.08, 1.8f, 0.0}, // TROT
     {0.30, 0.04, 0.06, 0.35, 0.0, 2.0f, 0.0}, // BOUND
     {0.24, 0.026f, 0.07, 0.35f, 0.10, 1.5f, 0.0}, // WALK
     {0.20, 0.05, 0.0, 0.75, 0.0, 1.0, 0.0}, // PRONK
@@ -44,7 +44,7 @@ GaitParams_t state_gait_params[] =
     {0.25, 0.04, 0.06, 0.35, 0.1, 2.0, 0.06}, // TURN_TROT
     {0, 0, 0, 0, 0.13, 0, 0}, // RESET
 		{0, 0, 0, 0, 0, 0, 0}, // INIT
-		{0.22f, 0.025, 0.06f, 0.35f, 0.0, 1.5f, 0} // Stepping
+		{0.22f, 0.025, 0.08f, 0.35f, 0.0, 1.5f, 0} // Stepping
 };
 extern void Trans_Jacobian(float Theta_1,float Theta_2,float current_1,float current_2);
 void CoupledMoveLeg(uint8_t leg_num,float t, GaitParams_t *params,float gait_offset, float leg_direction) {
@@ -57,10 +57,8 @@ void static_CoupledMoveLeg(uint8_t leg_num,float t, GaitParams_t *params,float g
     CartesianToThetaGamma(params,leg_direction);//坐标转换角度
     Theta_Gamma_To_moto_angle(params,leg_num);//转换为水平与上关节角度
 }
-//float P_1,P_2,D_1,D_2;
 void PositionControlThread(void *pvParameters)
 {
-	
 	uint32_t time_add;
 	last_state=state = INIT;
 	gait_params = state_gait_params[state];
@@ -71,8 +69,8 @@ void PositionControlThread(void *pvParameters)
 //		Trans_Jacobian(get_Leg_moto_Measure_Point(1)->total_angle,get_Leg_moto_Measure_Point(0)->total_angle,\
 //		get_Leg_moto_Measure_Point(0)->given_current/1000.0f,get_Leg_moto_Measure_Point(1)->given_current/1000.0f);
 		time_add++;
-		if(time_add%10==0)
-		{
+		if(time_add%10==0){
+//				printf("--%d--",HAL_GetTick());
 //			Ni_Ming(0xf1,get_Leg_moto_Measure_Point(6)->given_current/1000.0f,get_Leg_moto_Measure_Point(7)->given_current/1000.0f,\
 //			get_Leg_moto_Measure_Point(0)->given_current/1000.0f,get_Leg_moto_Measure_Point(1)->given_current/1000.0f);
 //				Ni_Ming(0xf1,Leg_Move.Moto_Angle_Pid[6].fdb,get_Leg_moto_Measure_Point(7)->round_cnt,\
@@ -106,7 +104,7 @@ void PositionControlThread(void *pvParameters)
 //				gait(&gait_params, 0.0, 0.5, 0.5, 0.0);
 			}break;
 			case TROT:{
-				Angle_Gain[0]=260;Angle_Gain[1]=0;Angle_Gain[2]=250;Speed_Gain[0]=400;Speed_Gain[1]=0;Speed_Gain[2]=300;
+				Angle_Gain[0]=200;Angle_Gain[1]=0;Angle_Gain[2]=250;Speed_Gain[0]=500;Speed_Gain[1]=0;Speed_Gain[2]=300;
 				Leg_Moto_Data_Update(Angle_Gain,Speed_Gain);
 				gait(&gait_params, 0.0, 0.5, 0.5, 0,\
 				sign_int16(get_remote_control_point()->rc.ch[4]),sign_int16(get_remote_control_point()->rc.ch[4]),\
@@ -151,7 +149,7 @@ void PositionControlThread(void *pvParameters)
 				gait(&gait_params, 0.0, 0.5, 0.5, 0,1,1,1,1);
 			}break;
 		}
-		vTaskDelay(1);
+		vTaskDelay(2);
 	}
 }
 void gait(GaitParams_t *params,float leg0_offset, float leg1_offset,float leg2_offset, float leg3_offset,\
@@ -169,7 +167,7 @@ void gait(GaitParams_t *params,float leg0_offset, float leg1_offset,float leg2_o
 		
     t = xTaskGetTickCount()/1000.0f;
 //    const float leg0_direction = -1.0;//方向
-//		params1.stance_height-=0.010f;
+		params1.stance_height+=0.010f;
     CoupledMoveLeg(0,t, &params1, leg0_offset, leg0_direction);
 //    const float leg1_direction = -1.0;
     CoupledMoveLeg(1,t, &params2, leg1_offset, leg1_direction);
@@ -194,7 +192,7 @@ void static_gait(GaitParams_t *params,float leg0_offset, float leg1_offset,float
 //        return;
 //    }
 		
-//		params1.stance_height-=0.010f;
+		y[0]+=0.010f;;
     static_CoupledMoveLeg(0,t, &params1, leg0_offset, leg0_direction,x[0],y[0]);
     static_CoupledMoveLeg(1,t, &params2, leg1_offset, leg1_direction,x[1],y[1]);
     static_CoupledMoveLeg(2,t, &params3, leg2_offset, leg2_direction,x[2],y[2]);
