@@ -64,7 +64,7 @@ void ExecuteJump() {
         CartesianToThetaGamma(&gait_params,1.0);
 
         // Use high stiffness and low damping to execute the jump
-				Angle_Gain[0]=200;Angle_Gain[2]=100;Speed_Gain[0]=300;Speed_Gain[2]=100;
+				Angle_Gain[0]=220;Angle_Gain[2]=100;Speed_Gain[0]=400;Speed_Gain[2]=100;
 				Leg_Moto_Data_Update(Angle_Gain,Speed_Gain);
 				CommandAllLegs(gait_params.theta,gait_params.gamma);
     } else if (t >= prep_time + launch_time && t < prep_time + launch_time + fall_time) {

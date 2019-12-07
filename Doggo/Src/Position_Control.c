@@ -31,7 +31,7 @@ GaitParams_t state_gait_params[] =
 {
    //{s.h, d.a., u.a., f.p., s.l., fr., s.d.}
     {0.22, 0.0,   0.0, 0.35, 0.0, 1.0, 0.0}, // STOP
-    {0.24, 0.026f, 0.08, 0.35, 0.08, 1.8f, 0.0}, // TROT
+    {0.24, 0.026f, 0.09, 0.35, 0.08, 1.5f, 0.0}, // TROT
     {0.30, 0.04, 0.06, 0.35, 0.0, 2.0f, 0.0}, // BOUND
     {0.24, 0.026f, 0.07, 0.35f, 0.10, 1.5f, 0.0}, // WALK
     {0.20, 0.05, 0.0, 0.75, 0.0, 1.0, 0.0}, // PRONK
@@ -44,7 +44,7 @@ GaitParams_t state_gait_params[] =
     {0.25, 0.04, 0.06, 0.35, 0.1, 2.0, 0.06}, // TURN_TROT
     {0, 0, 0, 0, 0.13, 0, 0}, // RESET
 		{0, 0, 0, 0, 0, 0, 0}, // INIT
-		{0.22f, 0.025, 0.08f, 0.35f, 0.0, 1.5f, 0} // Stepping
+		{0.24f, 0.02f, 0.10f, 0.30f, 0.0, 1.5f, 0} // Stepping
 };
 extern void Trans_Jacobian(float Theta_1,float Theta_2,float current_1,float current_2);
 void CoupledMoveLeg(uint8_t leg_num,float t, GaitParams_t *params,float gait_offset, float leg_direction) {
@@ -104,7 +104,7 @@ void PositionControlThread(void *pvParameters)
 //				gait(&gait_params, 0.0, 0.5, 0.5, 0.0);
 			}break;
 			case TROT:{
-				Angle_Gain[0]=200;Angle_Gain[1]=0;Angle_Gain[2]=250;Speed_Gain[0]=500;Speed_Gain[1]=0;Speed_Gain[2]=300;
+				Angle_Gain[0]=200;Angle_Gain[1]=0;Angle_Gain[2]=250;Speed_Gain[0]=450;Speed_Gain[1]=0;Speed_Gain[2]=300;
 				Leg_Moto_Data_Update(Angle_Gain,Speed_Gain);
 				gait(&gait_params, 0.0, 0.5, 0.5, 0,\
 				sign_int16(get_remote_control_point()->rc.ch[4]),sign_int16(get_remote_control_point()->rc.ch[4]),\
@@ -144,7 +144,7 @@ void PositionControlThread(void *pvParameters)
 				hop(&gait_params);
 			}break;
 			case Stepping:{
-				Angle_Gain[0]=150;Angle_Gain[1]=0;Angle_Gain[2]=200;Speed_Gain[0]=250;Speed_Gain[1]=0;Speed_Gain[2]=100;
+				Angle_Gain[0]=200;Angle_Gain[1]=0;Angle_Gain[2]=200;Speed_Gain[0]=350;Speed_Gain[1]=0;Speed_Gain[2]=100;
 				Leg_Moto_Data_Update(Angle_Gain,Speed_Gain);
 				gait(&gait_params, 0.0, 0.5, 0.5, 0,1,1,1,1);
 			}break;

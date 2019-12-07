@@ -643,11 +643,6 @@
               <FilePath>..\Src\Hop.c</FilePath>
             </File>
             <File>
-              <FileName>dwt_stm32_delay.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Inc\dwt_stm32_delay.h</FilePath>
-            </File>
-            <File>
               <FileName>dwt_stm32_delay.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Src\dwt_stm32_delay.c</FilePath>
